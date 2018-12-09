@@ -12,7 +12,7 @@ namespace KibaDDD
         static void Main(string[] args)
         {
             TestRun test = new TestRun();
-
+            test.AddRole();
 
         }
 
