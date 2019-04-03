@@ -21,15 +21,15 @@ namespace Repository
 {
     public class BaseRepository
     { 
-        public DateBaseContext Database
+        public DataBaseContext Database
         {
             get
             {
-                var context = RepositoryStatic.DateBaseContext as DateBaseContext;
+                var context = RepositoryStatic.DateBaseContext as DataBaseContext;
 
                 if (context == null)
                 {
-                    context = new DateBaseContext();
+                    context = new DataBaseContext();
                     RepositoryStatic.DateBaseContext = context;
                 }
                  

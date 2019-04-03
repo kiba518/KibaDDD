@@ -8,13 +8,13 @@ using System.Data.Entity.Migrations;
 
 namespace Repository
 {
-    public partial class DateBaseContext : DbContext
+    public partial class DataBaseContext : DbContext
     {
 
-        public DateBaseContext()
+        public DataBaseContext()
             : base("name=DateBaseContext")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DateBaseContext, Configuration>()); //设置自动更新数据库修改
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataBaseContext, Configuration>()); //设置自动更新数据库修改
             //Database.SetInitializer<DateBaseContext>(new DropCreateDatabaseIfModelChanges<DateBaseContext>());//设置数据库如果有变化，每次都重新创建数据库
             this.Configuration.ValidateOnSaveEnabled = true;//保存时验证
             this.Configuration.AutoDetectChangesEnabled = true;//跟踪变化
@@ -37,7 +37,7 @@ namespace Repository
             modelBuilder.Configurations.Add(new Kiba_VideoMap());
         }
     }
-    internal sealed class Configuration : DbMigrationsConfiguration<DateBaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataBaseContext>
     {
         public Configuration()
         {

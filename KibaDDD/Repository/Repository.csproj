@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RepositoryStatic.cs" />
-    <Compile Include="DateBaseContext.cs" />
+    <Compile Include="DataBaseContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TableMapping\Kiba_VideoMap.cs" />
     <Compile Include="TableMapping\Kiba_RoleMap.cs" />
